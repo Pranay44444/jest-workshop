@@ -1,11 +1,27 @@
-const { calculateFinalAmount } = require("../src/pricing");
+const { calculateFinalAmount } = require("../src/pricing")
 
-test("example: sanity check", () => {
-  expect(1 + 1).toBe(2);
-});
+test("no coupon",()=>{
+  expect(calculateFinalAmount(100)).toBe(100)
+})
 
-test("Check for invalid sub total", () => {
-  expect(() => calculateFinalAmount(-100, "DISCOUNT")).toThrow(
-    "Invalid subtotal",
-  );
-});
+test("SAVE10 coupon",()=>{
+  expect(calculateFinalAmount(500,"SAVE10")).toBe(450)
+})
+
+test("FLAT50 boundary",()=>{
+  expect(calculateFinalAmount(30,"FLAT50")).toBe(0)
+})
+
+test("invalid subtotal",()=>{
+  expect(() => calculateFinalAmount(-100,"SAVE10")).toThrow("Invalid subtotal")
+})
+
+test("case-insensitive coupon",()=>{
+  expect(calculateFinalAmount(500,"save10")).toBe(450)
+})
+
+test("invalid coupon",()=>{
+  expect(() => calculateFinalAmount(100,"INVALID")).toThrow("Invalid Coupon")
+})
+
+

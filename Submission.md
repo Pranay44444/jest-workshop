@@ -1,9 +1,9 @@
 # Jest Workshop Submission
 
 ## Student Details
-- Name:
-- Roll Number:
-- GitHub Username:
+- Name: Pranay Chitare
+- Roll Number: 2024-B-16102004
+- GitHub Username: Pranay44444
 
 ---
 
@@ -11,28 +11,33 @@
 
 List each test you wrote and briefly explain **what bug or regression it prevents**.
 
-### 1. Test Name:
-**What it protects against:**  
+### 1. Test Name: no coupon
+**What it protects against:** Ensures correct calculation when no coupon code is applied
 
 ---
 
-### 2. Test Name:
-**What it protects against:**  
+### 2. Test Name: SAVE10 coupon
+**What it protects against:** Validates 10% discount is applied correctly with SAVE10 coupon
 
 ---
 
-### 3. Test Name:
-**What it protects against:**  
+### 3. Test Name: FLAT50 boundary
+**What it protects against:** Prevents negative amounts when discount exceeds subtotal
 
 ---
 
-### 4. Test Name:
-**What it protects against:**  
+### 4. Test Name: invalid subtotal
+**What it protects against:** Catches invalid or negative subtotal inputs before processing
 
 ---
 
-### 5. Test Name:
-**What it protects against:**  
+### 5. Test Name: case-insensitive coupon
+**What it protects against:** Ensures coupon codes work regardless of letter casing
+
+---
+
+### 6. Test Name: invalid coupon
+**What it protects against:** Prevents processing of unrecognized or invalid coupon codes
 
 ---
 
