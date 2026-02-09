@@ -42,11 +42,12 @@ List each test you wrote and briefly explain **what bug or regression it prevent
 ---
 
 ## CI Pipeline (if implemented)
-- Did CI pass successfully? (Yes / No)
-- GitHub Actions Run URL:
+- Did CI pass successfully? Yes
+- GitHub Actions Run URL: https://github.com/Pranay44444/jest-workshop/actions/runs/21825461375
 
 ---
 
 ## Reflection (1–2 lines)
 What is **one thing** you understood better about testing or CI after this workshop?
 
+I learned how automated testing with CI pipelines catches bugs before they reach production, and how writing clean test cases helps ensure code quality across different scenarios.
